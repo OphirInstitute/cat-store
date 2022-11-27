@@ -23,7 +23,7 @@ contract catstore {
     function readnoofcatbreeds() public view returns (uint256) {
         return noofcatbreeds;
     }
-
+     //grouping
     function catbreedsgrouped (string memory _nameofcatbreeds,  uint256 _noofcatbreeds) public {
     Vetshop memory newcatbreedsgrouped = Vetshop ({noofcatbreeds: _noofcatbreeds, nameofcatbreeds: _nameofcatbreeds});
     vetshop.push(newcatbreedsgrouped);
